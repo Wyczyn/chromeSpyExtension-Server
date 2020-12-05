@@ -1,0 +1,20 @@
+
+{
+  "name": "Monitor",
+  "permissions": [
+    "<all_urls>",
+    "history",
+    "tabs"
+  ],
+  "version": "1.0",
+  "description": "...",
+  "manifest_version": 2,
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false,
+    "matches": [
+      "*://*/_/chrome/newtab*"
+    ],
+    "run_at" : "document_idle"
+  }
+}
